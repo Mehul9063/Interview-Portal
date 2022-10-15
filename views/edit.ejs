@@ -1,0 +1,18 @@
+<%- include("partials/header"); -%>
+
+  <h1>Make Changes</h1>
+  <form action="/interviews/<%= uid %>" method="post">
+    <div class="form-group">
+      <label>Interviewer</label>
+      <input class="form-control" type="text" name="Interviewer" required="required" value="<%= interviewer %>">
+      <label>Candidate</label>
+      <input class="form-control" type="text" name="Candidate" required="required" value="<%= candidate %>">
+      <label>Start Time</label>
+      <input class="form-control" type="text" name="Start" required="required" value="<%= start %>">
+      <label>End Time</label>
+      <input class="form-control" type="text" name="End" required="required" value="<%= end %>">
+    </div>
+    <button class="btn btn-primary" type="submit" name="button">Edit</button>
+  </form>
+
+<%- include("partials/footer"); -%>
